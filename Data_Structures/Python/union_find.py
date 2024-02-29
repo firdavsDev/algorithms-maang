@@ -8,19 +8,19 @@ Union: Checks the two nodes, if they belong to 2 diff sets, make one of the pare
 '''
 
 class Union:
-    def __init__(self):
+    def __init__(self, row, col):
         self.count = 0
-        parent = list(range(row*col))
-    def find(x):
-            while x != parent[x]:
-                parent[x] = parent[parent[x]]
-                x = parent[x]
+        self.parent = list(range(row*col))
+    def find(self,x):
+            while x != self.parent[x]:
+                self.parent[x] = self.parent[self.parent[x]]
+                x = self.parent[x]
             return x
 
-    def union(x,y):
-        xroot, yroot = find(x),find(y)
+    def union(self, x,y):
+        xroot, yroot = self.find(x), self.find(y)
         if xroot == yroot: return 
-        parent[xroot] = yroot
+        self.parent[xroot] = yroot
         self.count -= 1
 
 

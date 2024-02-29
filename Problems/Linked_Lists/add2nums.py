@@ -6,7 +6,7 @@ class ListNode:
 
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
-        dummy_head = listNode(0)
+        dummy_head = ListNode(0)
         L3: ListNode = dummy_head
 
         carry = 0
@@ -19,9 +19,8 @@ class Solution:
             carry = current_sum/10
             last_digit = current_sum % 10
 
-            new_node = listNode(last_digit)
-            l3.next = new_node
+            new_node = ListNode(last_digit)
+            L3.next = new_node
 
             if (l1 is not None):
                 
-

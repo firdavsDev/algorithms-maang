@@ -66,11 +66,11 @@ def return_largest_3(nums):
   #                         end
   
   # [0 -2 -2 -4 -4 -4 -4 -4 -4]
-                            |
-                            end
+                            # |
+                            # end
   
   # [-2 -3 -6 -11 -18]
   #                |
   #               end
   # => -7
-  nums => prefix_sum -> min_sofar
+  # nums => prefix_sum -> min_sofar
