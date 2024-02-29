@@ -48,4 +48,4 @@ def comb(n,m):
 def comb2(n,m):
     count = 0
     while n != 1 and m != 0 and m != n:
-        
+        pass

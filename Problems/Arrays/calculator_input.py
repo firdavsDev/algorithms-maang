@@ -20,7 +20,7 @@ def Eval(expr):
     num_list = []
     opr_list = []
 
-# .isnumeric() method
+    # .isnumeric() method
 
     for val in new_list:
         try:
@@ -41,4 +41,4 @@ def Eval(expr):
     print(result)
 
 # This solution doesn't account for the last edge case
-Eval('5+6  -3 +10')
+Eval('5+6-3 +10')
