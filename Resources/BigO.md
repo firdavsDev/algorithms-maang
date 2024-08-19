@@ -39,3 +39,7 @@ Rules of Thumb
 - Objects have O(1) access, intertion, and removal, and O(N) searching.
 - They have O(N) for Object methods like .keys, .values, and .entries
 - Arrays O(1) access, O(N) search, and intertion/removal depends on where
+
+
+
+[Article](https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/)
