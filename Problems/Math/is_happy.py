@@ -9,6 +9,7 @@ Return true if n is a happy number, and false if not.
 '''
 from math import floor
 
+
 def isHappy(n: int) -> bool:
     # Solution 1 - O(N^2) time | O(N) space
     visited = set()

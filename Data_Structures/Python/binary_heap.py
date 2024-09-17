@@ -8,7 +8,8 @@ BIG O: O(log N) insertion and removal, O(N) search
 
 Data structure where each element has a priority. Elements with high priorities are served before elements with low priorities. 
 '''
-import heapq as heap 
+import heapq as heap
+
 # heapq uses min binary heap by default
 # for a heap, children are at 2n + 1 for L and 2n + 2 where n is index of parent
 # Min Binary Heap by default, if we want max, invert values

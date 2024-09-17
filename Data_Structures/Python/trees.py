@@ -21,6 +21,7 @@ DFS Inorder gives you a list from smaller to bigger
 # Binary Search Trees - BFS and DFS
 import collections
 
+
 class Node:
     def __init__(self, val):
         self.value = val
