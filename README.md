@@ -8,7 +8,7 @@ Channel: [Daily Algo Boost](https://t.me/+XsGrTJ_hKSM1MmE6)
 ## Folder Structure
 
 ```bash
-├── Data_Structures/           # Implementations of common data structures & notes
+├── DataStructures/           # Implementations of common data structures & notes
 │   ├── Python/                # All common data structures implemented in Python
 ├── Problems/                  # Folder of leetcode problems broken down by data strcuture
 │   ├── Arrays/                # Problems related to arrays
@@ -32,6 +32,8 @@ Channel: [Daily Algo Boost](https://t.me/+XsGrTJ_hKSM1MmE6)
     |── Two_Pointers            # Two Pointers Technique
     |── Dvivide_and_Conquer     # Divide and Conquer Technique
     |── Recursion               # Recursion Technique
+├── Books/                     # Books
+│   |── ...
 ├── .gitignore                 # Files ignored by git
 ├── .prettierrc                # Prettier configuration
 ├── README.md
