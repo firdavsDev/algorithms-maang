@@ -23,5 +23,5 @@ key = 1
 obj = MyHashSet()
 obj.add(key)
 obj.remove(key)
-# param_3 = obj.contains(key)
-print(obj.keys)
+param_3 = obj.contains(key)
+print(obj.arr)
