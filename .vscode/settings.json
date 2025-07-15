@@ -1,5 +1,12 @@
 {
-    "github.copilot.enable": false,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false,
+        "python": false,
+        "typescriptreact": true
+    },
     "github.copilot.editor.enableAutoCompletions": false,
     "python.testing.unittestArgs": [
         "-v",
