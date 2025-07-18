@@ -15,17 +15,30 @@ Tushuntirish:
 """
 
 
-def rotate(nums: list, k: int) -> list:
+def reverse(data, left: int, right: int) -> list:
 
-    for i in range(k):
-        nums[0] = nums[-i]
-        print(nums)
+    while left < right:
+        data[left], data[right] = data[right], data[left]
+        left += 1
+        right -= 1
+
+
+def rotate(nums: list, k: int) -> list:
+    # Slice
+    # last_nums = nums[-k:]
+    # first_nums = nums[:-k]
+    # return last_nums + first_nums
+    k = k % len(nums)
+    # reverse
+    reverse(nums, 0, len(nums) - 1)  # 0, 3
+    reverse(nums, 0, k - 1)
+    reverse(nums, k, len(nums) - 1)  # 5, 3
     return nums
 
 
 if __name__ == "__main__":
-    nums = [1, 2, 3, 4, 5, 6, 7]
-    k = 3
+    nums = [1, 2, 3, 4]
+    k = 5
 
     result = rotate(nums, k)
     print(result)
