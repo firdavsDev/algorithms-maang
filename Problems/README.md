@@ -1,13 +1,6 @@
-# Notes on Problems
+# Daily Algo Boost | Challenge 🔥
 
-## Math:
+Sharpen your coding skills with daily LeetCode challenges and algorithm lessons. 📚
+From beginners to advanced coders, join us for practical tips, tricks, and problem-solving strategies that will boost your programming journey 🚀
 
-1342 - Number of Steps to Reduce a Number to Zero: Can be solved with bits but didn't understand it. Solved using if-else statements
-
-## Trees
-
-1315 - Sum of Nodes with Even-Valued Grandparent:
-
-## Arrays
-
-1395 - Count Number of Teams: Need to try to identify patterns and spend more time on sample inputs/outputs. Solution was a pattern that involved focusing on the middle element, then the two outside ones
+Telegram: [Join the community](https://t.me/+XsGrTJ_hKSM1MmE6)
