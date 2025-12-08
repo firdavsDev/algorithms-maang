@@ -1,4 +1,3 @@
-"""
 - Miqdorlarni o'lchash uchun hayotda turli hil o'lchov birliklaridan foydalanamiz.
 Uzunlik uchun santimetr, suv uchun litr, og'irlik uchun tonna/kilogram/gram/miligram va h.k.z.larni misol qilishimiz mumkin.
 Huddi shunday dasturlashdagi ko'p narsalarni ham o'lchash uchun o'lchov birliklari bor.
@@ -50,4 +49,3 @@ Useful links:
 - https://www.dsalgo.uz/bigo
 - 42.uz
 - https://www.youtube.com/watch?v=WqrbIUggEXQ&t=2697s
-"""
