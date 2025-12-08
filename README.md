@@ -10,14 +10,14 @@ Channel: [Daily Algo Boost](https://t.me/+XsGrTJ_hKSM1MmE6)
 ```bash
 ├── 42.uz/                      # Problem set from 42 school Uzbek
     ├── ...
-├── DataStructures/             # Implementations of common data structures & notes
+├── data-structures/             # Implementations of common data structures & notes
 │   ├── algoexpert-data/        # AlgoExpert problem solutions
 │   │   ├── Easy/               # Easy level problems
 │   │   ├── Medium/             # Medium level problems
 │   │   ├── Hard/               # Hard level problems
 │   │   └── Very Hard/          # Very Hard level problems
 │   └── data-structures-and-algorithms/  # DSA course materials
-├── Problems/                   # Coding interview problems
+├── problems/                   # Coding interview problems
 │   ├── Leetcode/               # LeetCode problems
 │   │   ├── easy/               # Easy problems
 │   │   ├── medium/             # Medium problems
@@ -26,7 +26,7 @@ Channel: [Daily Algo Boost](https://t.me/+XsGrTJ_hKSM1MmE6)
 │   │   ├── easy/               # Easy problems
 │   │   ├── medium/             # Medium problems
 │   │   └── hard/               # Hard problems
-├── Books/                      # Reference books and materials
+├── books/                      # Reference books and materials
 │   └── Useful/                 # Useful resources
 ├── .gitignore                  # Files ignored by git
 └── README.md
