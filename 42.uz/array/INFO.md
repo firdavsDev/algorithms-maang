@@ -27,8 +27,11 @@ Array — bu bir nechta qiymatlarni bitta o'zgaruvchida saqlash imkonini beruvch
 2) Agar xotirada array uchun ajratilgan joy yetarli bo'lmasa, yangi joy ajratiladi va eski ma'lumotlar yangi joyga ko'chiriladi. Bu jarayon sekin ishlaydi, shuning uchun array'larni yaratishda ehtiyot bo'lish kerak. Element yozish uchun O(1) vaqt talab qilinsa, yangi joy ajratish va ko'chirish O(n) vaqt talab qiladi.
 
 ## Array amallari
-![alt text](images/image.png)
+![alt text](../images/image.png)
 - Qo'shish (insert): Array oxiriga yangi element qo'shish O(1) vaqt talab qiladi, lekin agar joy yetarli bo'lmasa, yangi joy ajratish va ko'chirish O(n) vaqt talab qiladi.
 - O'chirish (delete): Array oxiridan element o'chirish O(1) vaqt talab qiladi, lekin o'rtadan yoki boshidan o'chirish O(n) vaqt talab qiladi, chunki qolgan elementlarni surish kerak bo'ladi.
 - Qidirish (search): Array ichida element qidirish O(n) vaqt talab qiladi, chunki har bir element tekshirilishi kerak.
 - Yangilash (update): Array ichidagi elementni yangilash O(1) vaqt talab qiladi, agar indeks ma'lum bo'lsa.
+
+## Xulosa
+Array'lar ma'lumotlarni tartiblangan shaklda saqlash uchun qulay vositadir, lekin ularning chegaralangan o'lchami va sekin ishlash xolatlari mavjud. Shu sababli, dasturchilar array'larni ehtiyotkorlik bilan tanlashlari kerak.
