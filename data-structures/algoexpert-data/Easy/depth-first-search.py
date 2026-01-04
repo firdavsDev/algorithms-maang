@@ -1,5 +1,5 @@
-
 # DEPTH FIRST SEARCH
+
 
 # ITERATIVE WAY
 class Node:
@@ -13,13 +13,14 @@ class Node:
 
     def depthFirstSearch(self, array):
         # Write your code here.
-		stack = [self]
-		while stack:
-			vertex = stack.pop()
-			array.append(vertex.name)
-			for child in vertex.children[::-1]:
-				stack.append(child)
-		return array
+        stack = [self]
+        while stack:
+            vertex = stack.pop()
+            array.append(vertex.name)
+            for child in vertex.children[::-1]:
+                stack.append(child)
+        return array
+
 
 # RECURSIVE WAY
 class Node:
@@ -34,7 +35,7 @@ class Node:
     def depthFirstSearch(self, array):
         # Write your code here.
         array.append(self.name)
-		for child in self.children:
-			child.depthFirstSearch(array)
-			
-		return array
+        for child in self.children:
+            child.depthFirstSearch(array)
+
+        return array
