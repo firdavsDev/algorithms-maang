@@ -1,51 +1,56 @@
-- Miqdorlarni o'lchash uchun hayotda turli hil o'lchov birliklaridan foydalanamiz.
+# Big O notation
+
+Miqdorlarni o'lchash uchun hayotda turli xil o'lchov birliklaridan foydalanamiz.
 Uzunlik uchun santimetr, suv uchun litr, og'irlik uchun tonna/kilogram/gram/miligram va h.k.z.larni misol qilishimiz mumkin.
-Huddi shunday dasturlashdagi ko'p narsalarni ham o'lchash uchun o'lchov birliklari bor.
+Xuddi shunday, dasturlashdagi ko'p narsalarni ham o'lchash uchun o'lchov birliklari bor.
 
-Algoritm va Ma'lumotlar Strukturasini o'lchash uchun esa biz odatda 3 xil o'lchov birligidan foydalanamiz:
-    1) Big O notation - Vaqt va Xotira murakkabligini eng maksimum qiymatini o'lchash uchun ishlatiladi. Uning vazifasi bizning Algoritm yoki Ma'lumotlar struktuamiz eng yomon holat(worst-case)da qanday ishlashini tasvirlaydi.
-    2) Theta notation - Vaqt va Xotira murakkabligini o'rtacha holatini o'lchash uchun ishlatiladi.
-    3) Omega notation - Vaqt va Xotira murakkabligini eng minimum qiymatini o'lchash uchun ishlatiladi. Uning vazifasi bizning Algoritm yoki Ma'lumotlar struktuamiz eng yaxshi holat(best-case)da qanday ishlashini tasvirlash.
+Algoritm va ma'lumotlar strukturasini o'lchash uchun odatda 3 xil o'lchov birligidan foydalanamiz:
 
-Dasturlarni odatda worst-case holati o'lchanadi. Chunki bu orqali siz o'z dasturingiz eng yomon holatda qanday ko'rsatgichda ishlashini bilib olasiz. Bu huddi marafon yuguruvchisi kasal va yugurishga loyiq emas holatida qanday natija ko'rsatishini o'lchashdek gap.
-Demak biz Big O notation nima uchun xizmat qilishini qisman tushunib oldik endi keling to'liqroq misollar bilan ko'rib chiqsak.
+1. **Big O notation** — vaqt va xotira murakkabligining eng yuqori qiymatini, ya'ni algoritm yoki ma'lumotlar strukturasining eng yomon holatda (*worst case*) qanday ishlashini tasvirlaydi.
+2. **Theta notation** — vaqt va xotira murakkabligining o'rtacha holatini tasvirlaydi.
+3. **Omega notation** — vaqt va xotira murakkabligining eng past qiymatini, ya'ni algoritm yoki ma'lumotlar strukturasining eng yaxshi holatda (*best case*) qanday ishlashini tasvirlaydi.
 
+Odatda dasturlarning *worst case* holati o'lchanadi. Chunki bu orqali dasturingiz eng yomon holatda qanday ko'rsatkichda ishlashini bilib olasiz. Bu xuddi marafon yuguruvchisining kasal va yugurishga yaroqsiz holatidagi natijasini o'lchashga o'xshaydi.
 
-Q) BigO nima?
-A) BigO bu algoritimingiz tezligi (vaqt) va qancha xotira kerak ekanligini aniqlab beradi.
-- Yani ma'lumotlarimiz ko'paygani sari bu qanchalik sekinlashish darajasini aytib beradi.
-- Big O input xajmi qanchalik oshgani sari funksiya o'zini qanday tutishi, tezligi va xajmi qanday o'sishini tasvirlash uchun ishlatilar ekan.
-- Misol uchun O(n), n harfi bu yerda input hajmini bildiradi va O() esa algoritmni o'lchashdagi belgi vazifasini o'taydi.
-- Keling endi o'lchovlarni qanday qilishni o'rganib chiqsak.
+## Big O nima?
 
-1) Constant:
-- Constant so'zi bu konstanta ya'ni o'zgarmas, doimiy degan ma'noni bildiradi.
-- Agar algoritm yoki ma'lumot strukturasi harqanday inputga nisbatan bir xil vaqt va xotira sarflasa, demak u constant bo'ladi.
-- Uni biz Big O bilan O(1) deb tasvirlaymiz.
+Big O algoritmingizning tezligi (vaqt murakkabligi) va qancha xotira kerakligini aniqlab beradi.
 
-2) Linear
-- Linear so'zi bu chiziqli degan ma'noni bildiradi.
-- Chiziq uzunligi o'sgani sari qiymati (sm) ham o'sib boradi.
-- Agar algoritm yoki ma'lumot strukturasi har-xil inputga nisbatan har-xil vaqt va xotira sarflasa, demak u linear bo'ladi.
-- Uni biz Big O bilan O(n) deb tasvirlaymiz.
+- Ma'lumotlar ko'paygani sari algoritm qanchalik sekinlashishini ko'rsatadi.
+- Funksiya input hajmi oshganda o'zini qanday tutishini, tezligi va xotira sarfi qanday o'sishini tasvirlaydi.
+- Masalan, `O(n)` ifodasida `n` input hajmini, `O()` esa algoritmni o'lchash belgisini bildiradi.
 
-Linear Time: Oldingizda 5ta idish mavjud va siz har bir idishni yuvish uchun 1-sekund vaqt sarflaysiz. Idishlar soni oshib borar ekan ketkaziladigan vaqt ham oshib boraveradi. Shuning uchun ham eng yomon ko'rsatgichda siz n-ta idish uchun n-sekund vaqt sarflaysiz.
+## 1. Constant — `O(1)`
 
-Linear Space: Mexmonxonada 1-kishilik xonalarni olaylik. Har bir inson uchun mexmonxona 1ta xona bersa, n-ta kishi uchun mexmonxona n-ta xona tayyorlashi kerak degani.
+*Constant* — konstanta, ya'ni o'zgarmas va doimiy degan ma'noni bildiradi.
 
-Logarithmic:
-- Logarifmni biz Big O da O(log n) deb tasvirlaymiz.
-- Bu yerda log deyilganda asos berilmagan bilaman ammo biz asosida 2 soni turibdi deb tasavvur qilishimiz kerak. Ya'ni log2 n degani bilan teng.
+Agar algoritm yoki ma'lumotlar strukturasi har qanday input uchun bir xil vaqt va xotira sarflasa, u constant hisoblanadi.
 
+## 2. Linear — `O(n)`
 
-log2(1024) = 10 (2ning nechani darajasi  1024ga teng degan mano bu yerda)
-log2(10) + log2(5) = log2(10*5) (bir xil asosli log'lar qushilganda unig darajalari ko'paytiriladi, asoslar ayrilganda esa darajalari bo'linadi )
-O(n) - bu linear(chiziqli) o'sish.
-Qancha xotira ko'p ishlatilsa, amalar shuncha tez bajariladi.
+*Linear* — chiziqli degan ma'noni bildiradi. Agar input hajmi oshgani sari algoritmning vaqt yoki xotira sarfi ham mutanosib ravishda oshsa, u linear hisoblanadi.
 
+### Linear time
 
+Oldingizda 5 ta idish mavjud va har bir idishni yuvish uchun 1 soniya sarflaysiz. Idishlar soni oshgani sari ketkaziladigan vaqt ham oshadi. Eng yomon holatda `n` ta idish uchun `n` soniya vaqt sarflaysiz.
 
-Useful links:
+### Linear space
+
+Mehmonxonada har bir inson uchun 1 ta xona ajratiladi. Demak, `n` ta kishi uchun mehmonxona `n` ta xona tayyorlashi kerak.
+
+## 3. Logarithmic — `O(log n)`
+
+Logarifm Big O da `O(log n)` ko'rinishida tasvirlanadi. Asos ko'rsatilmagan bo'lsa, odatda 2 soni nazarda tutiladi: `log₂ n`.
+
+```text
+log₂(1024) = 10
+log₂(10) + log₂(5) = log₂(10 × 5)
+```
+
+`O(n)` — chiziqli o'sish. Xotiradan ko'proq foydalanish har doim amallarni tezlashtirmaydi.
+
+## Foydali havolalar
+
 - https://www.dsalgo.uz/bigo
 - 42.uz
 - https://www.youtube.com/watch?v=WqrbIUggEXQ&t=2697s
